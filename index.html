@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coming Soon</title>
+
+    <meta
+        name="description"
+        content="Something extraordinary is coming soon."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span></span>
+            </div>
+
+            <p>INITIALIZING</p>
+
+            <div class="loader-line">
+                <div class="loader-progress"></div>
+            </div>
+
+            <span class="loader-number">0%</span>
+        </div>
+    </div>
+
+    <!-- Background -->
+    <div class="background">
+        <canvas id="particleCanvas"></canvas>
+
+        <div class="grid"></div>
+        <div class="noise"></div>
+
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orb orb-three"></div>
+
+        <div class="mouse-light"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="brand" aria-label="Home">
+            <div class="brand-icon">
+                <span></span>
+            </div>
+
+            <span>ZECODEE.</span>
+        </a>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            <span>IN DEVELOPMENT</span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="hero">
+
+        <div class="hero-content" id="heroCard">
+
+            <div class="eyebrow reveal">
+                <span class="eyebrow-line"></span>
+                <span>SOMETHING NEW IS ON THE WAY</span>
+                <span class="eyebrow-line"></span>
+            </div>
+
+            <h1 class="title reveal">
+                <span class="title-line">
+                    <span class="title-word">COMING</span>
+                </span>
+
+                <span class="title-line">
+                    <span class="title-word gradient-text">SOON</span>
+                    <span class="title-dot">.</span>
+                </span>
+            </h1>
+
+            <p class="description reveal">
+                I'am creating something
+                <span id="changingText">extraordinary.</span>
+                <br>
+                A new experience is about to begin.
+            </p>
+
+        </div>
+
+        <!-- Decorative Side Text -->
+        <div class="side-text left-side">
+            <span>EST. 2026</span>
+        </div>
+
+        <div class="side-text right-side">
+            <span>SCROLL TO EXPLORE</span>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>EXPLORE</span>
+
+            <div class="scroll-line">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Notification Modal -->
+    <div class="modal" id="modal">
+
+        <div class="modal-backdrop"></div>
+
+        <div class="modal-card">
+
+            <button class="close-modal" id="closeModal">×</button>
+
+            <div class="modal-icon">
+                <span>✦</span>
+            </div>
+
+            <span class="modal-small">STAY IN THE LOOP</span>
+
+            <h2>
+                Be there when
+                <br>
+                it happens.
+            </h2>
+
+            <p>
+                Enter your email and we'll let you know
+                the moment we go live.
+            </p>
+
+            <form class="email-form" id="emailForm">
+
+                <div class="input-wrapper">
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="your@email.com"
+                        required
+                    >
+
+                    <button type="submit">
+                        <span>JOIN</span>
+                        <span>→</span>
+                    </button>
+                </div>
+
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <span>✓</span>
+                You're on the list. See you soon.
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Info -->
+    <footer class="footer">
+        <span>© 2026</span>
+
+        <span class="footer-center">
+            DESIGNED FOR THE FUTURE
+        </span>
+
+        <span>01 / 01</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
